@@ -85,12 +85,9 @@ namespace Unadesk.Helpers
         /// <returns></returns>
         private static bool CheckTriangleCanExists(Triangle triangle)
         {
-            if (triangle.legA + triangle.legB > triangle.hypotenuse
+            return triangle.legA + triangle.legB > triangle.hypotenuse
                 && triangle.legA + triangle.hypotenuse > triangle.legB
-                && triangle.legB + triangle.hypotenuse > triangle.legA)
-                return true;
-
-            return false;
+                && triangle.legB + triangle.hypotenuse > triangle.legA;
         }
     }
 }

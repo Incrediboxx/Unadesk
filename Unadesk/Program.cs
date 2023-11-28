@@ -6,7 +6,7 @@ namespace Unadesk
     {
         static void Main(string[] args)
         {
-            var triangle = TriangleHelper.GetTriangle(false); ;
+            var triangle = TriangleHelper.GetTriangle(false);
             TriangleHelper.CheckTriangleType(triangle);
         }
     }
